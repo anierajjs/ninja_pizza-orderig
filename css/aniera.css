@@ -1,0 +1,38 @@
+.custom-select {
+display: inline-block;
+position: relative;
+font-family: Arial, sans-serif;
+font-size: 14px;
+color: #333;
+background-color: #fff;
+border: 1px solid #ccc;
+border-radius: 4px;
+padding: 8px 40px 8px 10px;
+transition: border-color 0.3s ease;
+}
+
+.custom-select::after {
+content: '\25BC';
+position: absolute;
+top: 50%;
+right: 10px;
+transform: translateY(-50%);
+color: #666;
+pointer-events: none;
+}
+
+.custom-select:hover,
+.custom-select:focus {
+border-color: #999;
+}
+
+
+  .disabled-link {
+    color: gray;
+    cursor: not-allowed;
+  }
+
+  .enabled-link {
+    color: red;
+    cursor: pointer;
+  }
